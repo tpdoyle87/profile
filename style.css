@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+  letter-spacing: .5px;
+  background-color: #FFF7E1;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3 {
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 23px;
+  color: #8DC781;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+img {
+  max-height: 175px;
+  height: 175px;
+  max-width: 175px;
+  width: 175px;
+}
+
+a {
+  text-decoration: none;
+  color: #8DC781;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+li a {
+  padding: 0px 30px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+  max-height: 175px;
+  text-align: center
+}
+
+.button-green {
+  padding: 10px 20px;
+  background-color: #8DC781;
+  color: white;
+  border-radius: 5px;
+}
+
+.card {
+  width: 500px;
+  margin: 15px auto;
+  background-color: #FFF7EB;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .1)
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.list-style {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.list-style li {
+  display: inline-block;
+  padding: 20px;
+}
+
+li a {
+  padding: 0;
+  font-size: 18px;
+}
+
+#profile-picture {
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    line-height: 35px;
+  }
+
+.list-style {
+  flex-direction: column;
+
+  }
+}
