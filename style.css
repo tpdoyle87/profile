@@ -8,6 +8,7 @@ body {
   letter-spacing: .5px;
   background-color: #FFF7E1;
   overflow: auto;
+  margin: 0px;
 }
 
 h1, h2, h3 {
@@ -79,15 +80,11 @@ td {
 }
 
 .container {
-  position: absolute;
-  margin-right: 200px;
   height: auto;
-  width: 700px;
   position: relative;
   background: #FFF7E1;
   overflow: auto;
   z-index: 1;
-  float: right;
 }
 
 .list-style {
@@ -110,15 +107,20 @@ td {
   align-items: center;
 }
 
-.sidebar-list-style li{
+.sidebar-list-style li {
   padding-top: 50px;
   list-style: none;
+  font-size: 30px;
+}
+
+.sidebar-list-style a {
+  font-size: 30px;
 }
 
 #side-bar {
   position: fixed;
   z-index: 1000; /*keeps the sidebar on top...giggity */
-  width: 175px;
+  width: 75px;
   left: 0;
   top: 0;
   bottom: 0;
@@ -158,10 +160,5 @@ li a {
   .container {
     width: 300px;
     line-height: 35px;
-  }
-
-.list-style {
-  flex-direction: column;
-
   }
 }
