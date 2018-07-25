@@ -7,6 +7,7 @@ body {
   line-height: 20px;
   letter-spacing: .5px;
   background-color: #FFF7E1;
+  overflow: auto;
 }
 
 h1, h2, h3 {
@@ -78,8 +79,15 @@ td {
 }
 
 .container {
-  width: 1000px;
-  margin: 0px auto;
+  position: absolute;
+  margin-right: 200px;
+  height: auto;
+  width: 700px;
+  position: relative;
+  background: #FFF7E1;
+  overflow: auto;
+  z-index: 1;
+  float: right;
 }
 
 .list-style {
@@ -95,6 +103,32 @@ td {
   padding: 20px;
 }
 
+.sidebar-list-style {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-list-style li{
+  padding-top: 50px;
+  list-style: none;
+}
+
+#side-bar {
+  position: fixed;
+  z-index: 1000;
+  width: 175px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  float: left;
+  background-color: rgb(50, 50, 50);
+}
+#page-content {
+  margin-left: 300px;
+}
+
 li a {
   padding: 0;
   font-size: 18px;
@@ -102,6 +136,9 @@ li a {
 
 #profile-picture {
   border-radius: 50%;
+}
+
+
 }
 
 @media (max-width: 960px) {
